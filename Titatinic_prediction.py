@@ -134,13 +134,13 @@ def main():
     clf=modelFit.modelFit_randomForest()
     modelFit.saveMode(clf)
 
-    # some pandas notes
-    ind=train_data.index
-    cols=train_data.columns
-    woman=train_data.loc[train_data.Sex=="female"]["Survived"]
-    woman_ratio=sum(woman)/len(woman)
-    man=train_data.loc[train_data.Sex=="male"]["Survived"]
-    man_ratio=sum(man)/len(man)
+    # # some pandas notes
+    # ind=train_data.index
+    # cols=train_data.columns
+    # woman=train_data.loc[train_data.Sex=="female"]["Survived"]
+    # woman_ratio=sum(woman)/len(woman)
+    # man=train_data.loc[train_data.Sex=="male"]["Survived"]
+    # man_ratio=sum(man)/len(man)
 
 if __name__ == '__main__':
     main()
